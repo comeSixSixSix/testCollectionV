@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLShowPictureViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9J-Ab-EBz">
+                    <rect key="frame" x="20" y="30" width="35" height="35"/>
+                    <state key="normal" image="show_image_back_icon">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="q6Q-CS-fqm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0Q-T7-Jh1">
+                    <rect key="frame" x="290" y="612" width="60" height="35"/>
+                    <color key="backgroundColor" red="0.56386625260000001" green="0.66666666669999997" blue="0.51611094219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="QWW-O6-51u"/>
+                        <constraint firstAttribute="height" constant="35" id="ryi-Gf-eje"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="save2photo" destination="-1" eventType="touchUpInside" id="tnj-YM-xxl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEJ-bu-at8">
+                    <rect key="frame" x="200" y="612" width="60" height="35"/>
+                    <color key="backgroundColor" red="0.56386625256185707" green="0.66666666666666663" blue="0.51611094223479781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="转发">
+                        <color key="titleColor" red="1" green="0.22529129980000001" blue="0.1069592791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="relay:" destination="-1" eventType="touchUpInside" id="7aw-gj-Y1l"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99829098999999999" green="1" blue="0.74582484469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gEJ-bu-at8" firstAttribute="top" secondItem="m0Q-T7-Jh1" secondAttribute="top" id="0Z2-nd-Dti"/>
+                <constraint firstItem="L9J-Ab-EBz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="P2u-oi-ltQ"/>
+                <constraint firstAttribute="bottom" secondItem="m0Q-T7-Jh1" secondAttribute="bottom" constant="20" id="Sqr-zR-dtg"/>
+                <constraint firstItem="m0Q-T7-Jh1" firstAttribute="height" secondItem="gEJ-bu-at8" secondAttribute="height" id="Uti-C6-7xW"/>
+                <constraint firstItem="m0Q-T7-Jh1" firstAttribute="width" secondItem="gEJ-bu-at8" secondAttribute="width" id="XeD-DQ-U0q"/>
+                <constraint firstAttribute="trailing" secondItem="m0Q-T7-Jh1" secondAttribute="trailing" constant="25" id="Yxf-eH-0NN"/>
+                <constraint firstItem="L9J-Ab-EBz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="anf-Po-Bbl"/>
+                <constraint firstItem="m0Q-T7-Jh1" firstAttribute="leading" secondItem="gEJ-bu-at8" secondAttribute="trailing" constant="30" id="uuF-68-9bb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>
